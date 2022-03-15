@@ -1,0 +1,56 @@
+<!-- <div class="personal-details">
+
+  <div class="applications-list-mvp">
+    {# <h3 class="strong">Get the next application</h3> #}
+    {# {% include "./get_case.html" %} #}
+  </div>
+
+  <div class="get-cases-mpv">
+    <h3 class="strong">Find an application by reference number</h3>
+      <form method="get" action="get-aplication-by-ref">
+        <fieldset>
+          <div class="form-group">
+            <label class="form-label" for="ninoapplication_applicationnumber">
+              Reference number
+            </label>
+            <input class="form-control" id="ninoapplication_applicationnumber" name="ninoapplication_applicationnumber" type="text">
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <input class="button" type="submit" value="Search">
+        </div>
+      </form>
+  </div>
+
+</div> -->
+
+  <form action="/account-question" method="post" >
+
+  <div class="form-group">
+    <fieldset>
+
+      <legend>
+        <h1 class="question-title">TEST Does the applicant have an account in CIS?</h1>
+      </legend>
+
+      <div class="multiple-choice">
+        <input id="account-question-yes" type="radio" name="account-question" value="yes">
+        <label for="account-question-yes">Yes</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="account-question-no" type="radio" name="account-question" value="no">
+        <label for="account-question-no">No</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="account-question-unconfident" type="radio" name="account-question" value="unconfident">
+        <label for="account-question-unconfident">I can’t confidently say either way</label>
+      </div>
+
+    </fieldset>
+
+  </div> <!-- END form-group -->
+
+
+    <button class="button" type="submit">Next</button>
+
+</form> <!-- END form -->

@@ -1,0 +1,108 @@
+{% extends "../../wrapper_template.html" %}
+
+{% block h2title %}
+  {% include "./title.njk" %}
+{% endblock  %}
+
+{% block content %}
+
+  <h2 class="heading-medium question">Check your answers</h2>
+
+    <div class="grid-row">
+      
+      <div class="column-one-half">
+        
+        <table class="table">
+          
+          <!-- PV -->
+            {% if data.personalDetail == 'pv' %}
+              {% include "./pv.njk" %}
+            {% endif %}
+          <!-- Date of birth -->
+            {% if data.personalDetail == 'dateOfBirth' %}
+              {% include "./birth.njk" %}
+            {% endif %}
+          <!-- Date of death -->
+            {% if data.personalDetail == 'dateOfDeath' %}
+              {% include "./death.njk" %}
+            {% endif %}
+          <!-- Sex -->
+            {% if data.personalDetail == 'sex' %}
+              {% include "./sex.njk" %}
+            {% endif %}
+          <!-- Identity fraud interest -->
+            {% if data.personalDetail == 'nifu' %}
+              {% include "./nifu.njk" %}
+            {% endif %}
+          <!--  Disability status -->
+            {% if data.personalDetail == 'disability' %}
+              {% include "./disability.njk" %}
+            {% endif %}
+          <!--  Additional needs -->
+            {% if data.personalDetail == 'additionalNeeds' %}
+              {% include "./needs.njk" %}
+            {% endif %}
+          <!--  Nationality -->
+            {% if data.personalDetail == 'nationality' %}
+              {% include "./nationality.njk" %}
+            {% endif %}
+          <!--  Spoken language -->
+            {% if data.personalDetail == 'spokenLanguage' %}
+              {% include "./spoken.njk" %}
+            {% endif %}
+          <!--  Preferred language -->
+            {% if data.personalDetail == 'preferredLanguage' %}
+              {% include "./preferred.njk" %}
+            {% endif %}
+          <!--  Immigration status -->
+            {% if data.personalDetail == 'immigration' %}
+              {% include "./immigration.njk" %}
+            {% endif %}
+          <!--  Marital status -->
+            {% if data.personalDetail == 'maritalStatus' %}
+              {% include "./marital.njk" %}
+            {% endif %}
+          <!--  ID AT RISK STATUS -->
+            {% if data.personalDetail == 'idAtRisk' %}
+              {% include "./risk.njk" %}
+            {% endif %}
+          <!--  ASSET FREEZE STATUS-->
+            {% if data.personalDetail == 'assetFreeze' %}
+              {% include "./freeze.njk" %}
+            {% endif %}
+          <!--  recordLevel-->
+            {% if data.personalDetail == 'recordLevel' %}
+              {% include "./record.njk" %}
+            {% endif %}
+          <!--  indIndicator-->
+            {% if data.personalDetail == 'indIndicator' %}
+              {% include "./indIndicator.njk" %}
+            {% endif %}
+          
+          <!--  recordLevel-->
+            {% if data.personalDetail == 'relationship' %}
+              {% include "./relationship.njk" %}
+            {% endif %}
+          
+
+        </table>
+      <br>
+        <form method="get" action="add-detail-handler">
+        <div class="form-group">
+          <input class="button" type="submit" value="Submit">
+        </div>
+      </form>
+      <a href="/account3/account">Cancel</a>
+
+        {# <form method="get" action="check-person-handler">
+        <div class="form-group">
+          <input class="button" type="submit" value="Submit">
+        </div>
+      </form>
+      <a href="/account3/account">Cancel</a> #}
+    </div>
+  </div>
+
+
+
+{% endblock %}

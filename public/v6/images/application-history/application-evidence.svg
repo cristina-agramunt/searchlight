@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="188px" viewBox="0 0 137 188" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>application-evidence</title>
+    <g id="application-evidence" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <line x1="1.5" y1="2" x2="1.5" y2="173" id="Line-2-Copy-6" stroke="#1D70B8" stroke-width="3" stroke-linecap="square"></line>
+        <line x1="2" y1="88" x2="12" y2="88" id="Line-3-Copy-21" stroke="#1D70B8" stroke-width="3" stroke-linecap="square"></line>
+        <line x1="2" y1="10" x2="12" y2="10" id="Line-3-Copy-22" stroke="#1D70B8" stroke-width="3" stroke-linecap="square"></line>
+        <line x1="2" y1="166" x2="12" y2="166" id="Line-3-Copy-23" stroke="#1D70B8" stroke-width="3" stroke-linecap="square"></line>
+        <text id="Application-submited-Copy-3" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="12" font-weight="bold" letter-spacing="0.054">
+            <tspan x="20" y="170" fill="#000000">Application submited</tspan>
+            <tspan x="20" y="187" font-family="GDSTransportWebsite, GDS Transport Website" font-weight="300" fill="#505A5F">10 November 2020</tspan>
+        </text>
+        <text id="Evidence-uploaded-Ye" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="12" font-weight="bold" letter-spacing="0.054">
+            <tspan x="20" y="14" fill="#000000">Evidence uploaded</tspan>
+            <tspan x="20" y="31" font-family="GDSTransportWebsite, GDS Transport Website" font-weight="300" fill="#000000">Yes</tspan>
+            <tspan x="38.0155156" y="31" fill="#000000"></tspan>
+            <tspan x="20" y="48" font-family="GDSTransportWebsite, GDS Transport Website" font-weight="300" fill="#505A5F">13 November 2020</tspan>
+        </text>
+        <text id="Proved-ID-Yes-13-Nov" font-family="GDSTransportWebsite-Bold, GDS Transport Website" font-size="12" font-weight="bold" letter-spacing="0.054">
+            <tspan x="20" y="92" fill="#000000">Proved ID</tspan>
+            <tspan x="20" y="109" font-family="GDSTransportWebsite, GDS Transport Website" font-weight="300" fill="#000000">Yes</tspan>
+            <tspan x="38.0155156" y="109" fill="#000000"></tspan>
+            <tspan x="20" y="126" font-family="GDSTransportWebsite, GDS Transport Website" font-weight="300" fill="#505A5F">13 November 2020</tspan>
+        </text>
+    </g>
+</svg>

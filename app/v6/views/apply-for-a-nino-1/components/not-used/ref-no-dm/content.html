@@ -1,0 +1,60 @@
+
+
+  <h1 class="question-title">National Insurance number applications</h1>
+
+  <form action="application-details-dm" method="post" >
+
+  <div class="form-group">
+    <fieldset>
+
+      <legend>
+        <h2 class="heading-medium">Which reference number do you have?</h2>
+      </legend>
+
+      <div class="multiple-choice" data-target="app-ref">
+        <input id="account-question-yes" type="radio" name="account-question" value="yes">
+        <label for="account-question-yes">Application</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="app-ref">
+      <label class="form-label" for="contact-email">Application reference number</label>
+      <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+
+      <div class="multiple-choice" data-target="pass-ref">
+        <input id="account-question-no" type="radio" name="account-question" value="no">
+        <label for="account-question-no">Passport</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="pass-ref">
+      <label class="form-label" for="contact-email">Passport number</label>
+      <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+
+
+      <div class="multiple-choice" data-target="brp-no">
+        <input id="account-question-unconfident" type="radio" name="account-question" value="unconfident">
+        <label for="account-question-unconfident">BRP</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="brp-no">
+      <label class="form-label" for="contact-email">BRP number</label>
+      <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+
+
+      <div class="multiple-choice" data-target="id-no">
+        <input id="account-question-unconfident" type="radio" name="account-question" value="unconfident">
+        <label for="account-question-unconfident">National Identity card</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="id-no">
+      <label class="form-label" for="contact-email">National Identity card number</label>
+      <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+
+
+    </fieldset>
+
+  </div> <!-- END form-group -->
+
+
+    <button class="button" type="submit">Next</button>
+
+</form> <!-- END form --><!-- END form-group -->

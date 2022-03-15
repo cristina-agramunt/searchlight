@@ -1,0 +1,152 @@
+<!-- <div class="personal-details">
+
+  <div class="applications-list-mvp">
+    {# <h3 class="strong">Get the next application</h3> #}
+    {# {% include "./get_case.html" %} #}
+  </div>
+
+  <div class="get-cases-mpv">
+    <h3 class="strong">Find an application by reference number</h3>
+      <form method="get" action="get-aplication-by-ref">
+        <fieldset>
+          <div class="form-group">
+            <label class="form-label" for="ninoapplication_applicationnumber">
+              Reference number
+            </label>
+            <input class="form-control" id="ninoapplication_applicationnumber" name="ninoapplication_applicationnumber" type="text">
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <input class="button" type="submit" value="Search">
+        </div>
+      </form>
+  </div>
+
+</div> -->
+
+  <h1 class="question-title fallout-title">Search for possible matches</h1>
+  <p class="margin-bottom-40">Use the applicant’s details and their Home Office record to check they don’t already have an account on CIS.</p>
+
+  <div id="fallout" class="grid-row">
+
+    <div class="column-one-half hard-right-border">
+
+      <h2 class="sl-font-bold sl-third-heading">Search</h2>
+
+<form class="form" action="results-01" method="post">
+
+
+
+      <div class="form-group">
+
+        <div class="form-group left">
+          <label class="form-label" for="first-and-middle-names">
+            First and middle names
+          </label>
+          <input class="form-control fallout-input" id="first-and-middle-names" type="text" name="first-and-middle-names">
+        </div>
+
+        <div class="form-group left">
+          <label class="form-label" for="last-name">
+            Last name
+          </label>
+          <input class="form-control fallout-input" id="last-name" type="text" name="last-name">
+        </div>
+
+        <div class="form-group left">
+          <label class="form-label" for="date-of-birth">
+            Date of birth
+          </label>
+          <input class="form-control" id="date-of-birth" type="text" name="date-of-birth">
+        </div>
+
+        <div class="form-group left">
+          <label class="form-label" for="first-and-middle-names">
+            First line of address
+          </label>
+          <input class="form-control fallout-input" id="first-and-middle-names" type="text" name="first-and-middle-names">
+        </div>
+
+        <div class="form-group left">
+          <label class="form-label" for="last-name">
+            Town
+          </label>
+          <input class="form-control fallout-input" id="last-name" type="text" name="last-name">
+        </div>
+
+        <div class="form-group left">
+          <label class="form-label" for="date-of-birth">
+            Postcode
+          </label>
+          <input class="form-control" id="date-of-birth" type="text" name="date-of-birth">
+        </div>
+
+        <div class="form-group">
+          <fieldset class="">
+            <legend>
+              <span class="form-label">Sex</span>
+            </legend>
+
+            <div class="multiple-choice fallout-inline">
+              <input id="male" name="waste-types" type="checkbox" value="male">
+              <label for="male">Male</label>
+            </div>
+
+
+            <div class="multiple-choice fallout-inline">
+              <input id="female" name="waste-types" type="checkbox" value="female">
+              <label for="female">Female</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group left">
+          <label class="form-label" for="date-of-birth">
+            Contact number or email
+          </label>
+          <input class="form-control fallout-input" id="date-of-birth" type="text" name="date-of-birth">
+        </div>
+
+        <div class="fallout-details">
+          <a href="search-01">Show less options</a>
+        </div>
+
+        <div class="fallout-trace-options" >
+          <div class="form-group">
+              <fieldset>
+                <legend class="visually-hidden">
+                  <p>Trace options</p>
+                </legend>
+                <div class="multiple-choice">
+                  <input id="relaxed" name="trace-options" type="checkbox" value="relaxed">
+                  <label for="relaxed"><span>Relaxed trace</span><br /> <span>Include similar names</span></label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="multipart" name="trace-options" type="checkbox" value="multipart">
+                  <label for="multipart"><span>Multipart surname</span><br /> <span>Prefix, hyphen, part name</span></label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="historic" name="trace-options" type="checkbox" value="historic">
+                  <label for="historic"><span>Historic trace</span><br /> <span>Include historic entries</span></label>
+                </div>
+              </fieldset>
+            </div> <!-- END form-group -->
+
+        </div> <!-- END form-col-small -->
+
+        <div class="form-group buttons">
+        <button class="button" type="submit">Search</button>
+        <a href="#" class="button sl-secondary-button" type="submit">Clear form</a>
+        </div> <!-- END form-group -->
+
+
+      </div> <!-- END form-group -->
+    </form>
+    </div> <!-- END column-one-half -->
+
+    <div class="column-one-half hard-left-border">
+      {% include "../applicant-details.njk" %}
+    </div>  <!-- END column-one-half -->
+
+  </div>

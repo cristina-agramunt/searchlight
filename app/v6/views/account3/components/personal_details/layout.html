@@ -1,0 +1,99 @@
+<div name="Personal" id="Personal">
+  
+  <h2>Personal details</h2>
+  
+  <div class="sl-primary-card sl-personal-details-card">
+
+    <div class="personal-details">
+            
+      {% if data.citizen.pv == true or data.citizen.pvMember == true or data.citizen.pvPartner == true %}
+        {% include "./potentially-violent.html" %}
+        <hr class="light">
+      {% endif %}
+      
+      {% if data.citizen.nifu == true %}
+        {% include "./nifu.html" %}
+        <hr class="light">
+      {% endif %}
+            
+      {% include "./names.html" %}
+      <hr class="light">
+            
+      {% include "./dob.html" %}
+      <hr class="light">
+
+      {% if data.citizen.dodValue != null or data.canUpdate == true %}
+        {% include "./dod.html" %}
+        <hr class="light">
+      {% endif %}
+      
+      {% if data.citizen.disability != null %}
+        {% include "./disability.html" %}
+        <hr class="light">
+      {% endif %}
+
+      {% if data.citizen.additionalNeeds != null %}
+        {% include "./needs.html" %}
+        <hr class="light">
+      {% endif %}
+
+      {% include "./nino.html" %}
+      <hr class="light">
+
+      {% if data.canUpdate == true %}
+        {% include "./creation.html" %}
+        <hr class="light">
+        {% include "./record-level.html" %}
+        <hr class="light">
+      {% endif %}
+
+      {% include "./sex.html" %}
+      <hr class="light">
+        
+      {% if data.citizen.genderPreGra != null or data.citizen.genderGra != null %}
+        {% include "./gender.html" %}
+        <hr class="light">
+      {% endif %}
+
+      {# Other personal details #}
+      {% for detailName, value in data.citizen %}
+        {% if value != null %}
+          {% if detailName == "preferredLanguage" %}
+          <!-- include "./preferred-language.html"           
+          <hr class="light">
+          -->
+          {% elif detailName == "spokenLanguage" %}
+            {% include "./spoken-language.html" %}
+            <hr class="light">
+          {% elif detailName == "maritalStatus" %}
+            {% include "./marital.html" %}
+            <hr class="light">
+          {% elif detailName == "idAtRisk" %}
+            {% include "./risk.html" %}
+            <hr class="light">
+          {% elif detailName == "assetFreeze" %}
+            {% include "./asset-freeze.html" %}
+            <hr class="light">
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {# Immigration and nationality #}
+      {% if data.citizen.nationality != null %}
+        {% include "./nationality.html" %}
+        <hr class="light">
+      {% endif %}
+
+
+      {% if data.citizen.nationality != null %}
+        {% include "./immigration.html" %}
+        <hr class="light">
+      {% endif %}
+
+      {% include "./get_ho_data.html" %}
+
+  </div>
+    
+</div>
+
+{% include "../modals/modals.html" %}

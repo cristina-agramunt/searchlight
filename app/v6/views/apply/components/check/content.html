@@ -1,0 +1,32 @@
+<div class="personal-details">
+  <div class="grid-row">
+    <div class="column-one-half">
+
+      <table class="table">
+        <tr>
+          <td class="bold">First names on application</td>
+          <td>{{data.currentNinoApplication.nameOneFirst}}</td>
+        </tr>
+        <tr>
+          <td class="bold">Your entry for first names</td>
+          <td>{{data.ninoapplication_firstnames}}</td>
+        </tr>
+        <tr>
+           <td class="bold">Last name on application</td>
+          <td>{{data.currentNinoApplication.nameOneLast}}</td>
+        </tr>
+        <tr>
+           <td class="bold">Your entry for last name</td>
+          <td>{{data.ninoapplication_lastname}}</td>
+        </tr>
+      </table>
+
+      <br>
+      <form method="get" action="nameentry-handler">
+        <div class="form-group">
+          <input class="button" type="submit" value="Next">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
