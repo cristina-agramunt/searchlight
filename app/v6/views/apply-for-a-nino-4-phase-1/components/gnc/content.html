@@ -28,6 +28,9 @@
         <label for="account-question-unconfident">Student Loan</label>
       </div>
      
+
+
+<form >
     <input type="radio" name="usertype" value="admin">Admin
     <br>
     <input type="radio" name="usertype" value="hod">HOD
@@ -41,6 +44,10 @@
     <input type="radio" name="usertype" value="student">Student
     </br>
     <input type="submit" value="Submit">
+
+</form>
+
+
 
 
     </fieldset>
@@ -58,10 +65,19 @@
 </p>
 
 <script>
+
 $(function(){
    $('form').on('submit',function(){
    event.preventDefault();
-   location.href =$("input[name=usertype]:checked").val()+".html";         
+       var value=$("input[name=usertype]:checked").val();
+	   switch(value){
+	     case "admin":  location.href='admin.html'; break;
+		 case "hod":  location.href='hod.html'; break;
+		 case "tstaff":  location.href='tstaff.html'; break;
+		
+	   }
    });
 });
 </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
