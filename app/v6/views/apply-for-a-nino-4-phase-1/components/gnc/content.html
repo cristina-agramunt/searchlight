@@ -2,7 +2,7 @@
 
   <h1 class="question-title">National Insurance number applications</h1>
 
-  
+  <form action="application-details" method="post" >
 
 <div class="form-group">
     <fieldset>
@@ -30,25 +30,6 @@
      
 
 
-<form>
-    <input type="radio" name="usertype" value="admin">Admin
-    <br>
-    <input type="radio" name="usertype" value="hod">HOD
-    <br>
-    <input type="radio" name="usertype" value="tstaff">Teaching Staff
-    <br>
-    <input type="radio" name="usertype" value="ntstaff">Non Teaching Staff
-    <br>
-    <input type="radio" name="usertype" value="cr">CR
-    <br>
-    <input type="radio" name="usertype" value="student">Student
-    </br>
-    <input type="submit" value="Submit">
-
-</form>
-
-
-
 
     </fieldset>
 
@@ -58,26 +39,8 @@
 
     <button class="button" type="submit">Next</button>
 
-
+</form> <!-- END form --><!-- END form-group -->
 <br />
 <p>
 <a href="ref-no-dm" class="secondary-link">Search for an application</a>
 </p>
-
-<script>
-
-$(function(){
-   $('form').on('submit',function(){
-   event.preventDefault();
-       var value=$("input[name=usertype]:checked").val();
-	   switch(value){
-	     case "admin":  location.href='admin.html'; break;
-		 case "hod":  location.href='hod.html'; break;
-		 case "tstaff":  location.href='tstaff.html'; break;
-		
-	   }
-   });
-});
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
