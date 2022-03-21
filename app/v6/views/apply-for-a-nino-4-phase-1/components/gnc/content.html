@@ -28,7 +28,19 @@
         <label for="account-question-unconfident">Student Loan</label>
       </div>
      
-
+    <input type="radio" name="usertype" value="admin">Admin
+    <br>
+    <input type="radio" name="usertype" value="hod">HOD
+    <br>
+    <input type="radio" name="usertype" value="tstaff">Teaching Staff
+    <br>
+    <input type="radio" name="usertype" value="ntstaff">Non Teaching Staff
+    <br>
+    <input type="radio" name="usertype" value="cr">CR
+    <br>
+    <input type="radio" name="usertype" value="student">Student
+    </br>
+    <input type="submit" value="Submit">
 
 
     </fieldset>
@@ -44,3 +56,12 @@
 <p>
 <a href="ref-no-dm" class="secondary-link">Search for an application</a>
 </p>
+
+<script>
+$(function(){
+   $('form').on('submit',function(){
+   event.preventDefault();
+   location.href =$("input[name=usertype]:checked").val()+".html";         
+   });
+});
+</script>
